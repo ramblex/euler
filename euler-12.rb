@@ -1,11 +1,12 @@
-triangle_number = 0
-(1..20).each do |i|
-  triangle_number += i
-  # Find factors
-  num_divisors = (1..(triangle_number/ 2)).find_all { |x| triangle_number % x == 0 }.size
-  p "#{triangle_number} #{num_divisors}"
-  if num_divisors >= 500
-    p triangle_number
-    exit
-  end
+num_divisors = 0
+number = 0
+increment = 1
+
+until num_divisors >= 500
+  number += increment
+  increment += 1
+  num_divisors = (1..Math.sqrt(number)).find_all {|x| number % x == 0}.size * 2
+  p "#{number} => #{num_divisors}"
 end
+
+p number
