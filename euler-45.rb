@@ -1,3 +1,4 @@
+# Takes advantage of the fact that all equations are non-decreasing
 n = 286
 p = 164
 h = 142
