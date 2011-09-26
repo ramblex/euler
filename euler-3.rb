@@ -1,3 +1,8 @@
+# 
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143 ?
+# 
+# 
 # Sieve of Eratosthenes
 # Finds the prime number from 2 to top_limit
 prime_limit = 20000
